@@ -1,0 +1,113 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.root nav {
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 440px) {
+	.root nav {
+		flex-direction: row;
+		align-items: baseline;
+	}
+}
+
+.root main {
+	background-color: #eee;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.root nav a {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	justify-content: center;
+	padding: 16px;
+}
+
+.root nav a.brand {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.root nav a:not(.brand) {
+	text-transform: uppercase;
+}
+
+.root nav a:hover {
+	background-color: #666;
+}
+
+.root main p {
+	margin-bottom: 8px;
+}
+
+@media (min-width: 900px) {
+	.root main p {
+		margin: 0px auto;
+		width: 900px;
+	}
+}
+
+.root main form {
+	display: flex;
+}
+
+.root main form input {
+	flex-grow: 1;
+	border-style: none;
+	border-radius: 15px 0px 0px 15px;
+	padding: 0px 15px;
+}
+
+.root main form button {
+	flex-basis: 100px;
+	height: 30px;
+	border-style: none;
+	background-color: orange;
+	border-radius: 0px 15px 15px 0px;
+	text-transform: uppercase;
+}
+
+.root main ul {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.root main ul li {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 350px;
+	height: 213px;
+	background-color: white;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.root main ul li img.poster {
+	width: 150px;
+	height: 213px;
+}
+
+.root main ul li img .title {
+	font-size: 1.5em;
+	margin-top: 8px;
+}
+
+.root main  ul li .year {
+	font-size: 0.7em;
+}
